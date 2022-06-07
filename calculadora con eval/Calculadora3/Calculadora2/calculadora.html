@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+
+<body>
+    <div class="calculadora">
+        <div>
+            <input id="input1" disabled="true">
+        </div>
+        
+        <div>
+            <button class="botones" id="siete" onkeypress="btnsiete()" onclick="btnsiete()">7</button>
+            <button class="botones" id="ocho" onkeypress="btnocho()" onclick="btnocho()">8</button>
+            <button class="botones" id="nueve" onclick="btnnueve()">9</button>
+            <button class="botones"id="suma" onclick="btnsuma()">+</button>
+        </div>
+
+        <div>
+            <button class="botones" id="cuatro" onclick="btncuatro()">4</button>
+            <button class="botones" id="cinco" onclick="btncinco()">5</button>
+            <button class="botones" id="sies" onclick="btnseis()">6</button>
+            <button class="botones" id="resta" onkeydown="btnresta()" onclick="btnresta()">-</button>
+        </div>
+
+        <div>
+            <button class="botones" id="uno" onclick="btnuno()">1</button>
+            <button class="botones" id="dos" onclick="btndos()">2</button>
+            <button class="botones" id="tres" onclick="btntres()">3</button>
+            <button class="botones" id="multi" onclick="btnmulti()">*</button>
+        </div>
+
+        <div>
+            <button class="botones" id="cero" onclick="btncero()">0</button>
+            <button class="botones" id="igual" onclick="btnigual()">=</button>
+            <button class="botones" id="limpiar" onclick="btnlimpiar()">C</button>
+            <button class="botones" id="divi" onclick="btndivi()">/</button>
+            
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
